@@ -1,0 +1,148 @@
+:root {
+  --FONT_DEFAULT: SanFrancisco;
+
+  --WEIGHT_NORMAL: 500;
+  --WEIGHT_600: 600;
+
+  --MODAL_MOBILE: 80vh;
+
+  --TRANSITION_03: 0.3s;
+  --TRANSITION_05: 0.5s;
+  --TRANSITION_1: 1s;
+  --TRANSITION_4: 4s;
+
+  --OPACITY_03: 0.3;
+  --OPACITY_05: 0.5;
+  --OPACITY_09: 0.9;
+  --OPACITY_1: 1;
+
+  --FONT_SIZE_TITLE: 20px;
+  --FONT_SIZE_SUB_TITLE: 16px;
+  --FONT_SIZE_TEXT: 14px;
+  --FONT_SIZE_SUB_TEXT: 12px;
+  --FONT_SIZE_28: 28px; /* TODO: check the value */
+
+  --LINE_HEIGHT_14: 14px;
+  --LINE_HEIGHT_16: 16px;
+  --LINE_HEIGHT_18: 18px;
+  --LINE_HEIGHT_20: 20px;
+  --LINE_HEIGHT_24: 24px;
+  --LINE_HEIGHT_30: 30px;
+  --LINE_HEIGHT_34: 34px;
+
+  /* Surface */
+  --COLOR_FOREGROUND: rgba(255, 255, 255, 1); /* #FFFFFF */
+  --COLOR_APP_BACKGROUND: rgba(252, 252, 253, 1); /* #FCFCFD */
+  --COLOR_SECONDARY_BACKGROUND: rgba(243, 245, 251, 1); /* #F3F5FB */
+  --COLOR_SUCCESS_BACKGROUND: rgba(237, 249, 241, 1); /* #EDF9F1 */
+  --COLOR_ERROR_BACKGROUND: rgba(255, 238, 235, 1); /* #FFEEEB */
+  --COLOR_POP_UP_BACKGROUND: rgba(38, 26, 89, 0.9); /* #261A59 */
+
+  /* Text & Icons */
+  --COLOR_PRIMARY: rgba(38, 26, 89, 1); /* #261A59 */
+  --COLOR_SUBTEXT: rgba(142, 142, 173, 1); /* #8E8EAD */
+  --COLOR_ARTICLES: rgba(64, 64, 64, 1); /* #404040 */
+
+  /* Buttons & Accent Colors */
+  --COLOR_POSITIVE: rgba(108, 201, 137, 1); /* #6CC989 */
+  --COLOR_POSITIVE_PRESSED: rgba(91, 188, 121, 1); /* #5BBC79 */
+  --COLOR_NEGATIVE: rgba(253, 135, 110, 1); /* #FD876E */
+  --COLOR_NEUTRAL: rgba(254, 228, 156, 1); /* #FEE49C */
+  --COLOR_LINKS: rgba(90, 95, 227, 1); /* #5A5FE3 */
+  --COLOR_GIF_RESTORE_PURCHASE: rgba(236, 236, 246, 1); /* #ECECF6 */
+  --COLOR_BUBBLES_SYSTEM: rgba(10, 132, 255, 1); /* #0A84FF */
+
+  /* Strokes */
+  --COLOR_STROKE_GENERAL: rgba(214, 220, 229, 1); /* #D6DCE5 */
+  --COLOR_STROKE_ACTIVE: rgba(176, 176, 215, 1); /* B0B0D7 */
+  --COLOR_STROKE_LIGHT: rgba(237, 237, 237, 1); /* #EDEDED */
+
+  /* Social */
+  --COLOR_WHATS_APP: rgba(37, 228, 122, 1); /* #25E47A */
+  --COLOR_FACEBOOK: rgba(52, 139, 251, 1); /* #348BFB */
+  --COLOR_IMESSAGE: rgba(46, 202, 70, 1); /* #2ECA46 */
+
+  /* Shadows */
+  --COLOR_SHADOW_GENERAL: rgba(179, 179, 199, 0.2); /* #B3B3C7 */
+  --COLOR_SHADOW_GENERAL_INVERT: rgba(179, 179, 199, 0.16); /* #B3B3C7 */
+  --COLOR_SHADOW_POSITIVE: rgba(141, 227, 168, 0.7); /* #8DE3A8 */
+  --COLOR_SHADOW_NEGATIVE: rgba(253, 135, 110, 0.4); /* #FD876E */
+  --COLOR_SHADOW_DARK: rgba(52, 52, 98, 0.16); /* #343462 */
+
+  /* --------------------------- */
+  /* 2, remove later */
+  --COLOR_GRAY_HOVER: #eaeaea;
+  /* 2, remove later */
+  --COLOR_WHITE_SHADOW_TWO_COLOR: rgba(179, 179, 199, 0.1);
+
+  --SIZE_BORDER: 1px;
+  --SIZE_BORDER_THICK: 2px;
+  --SIZE_TOP_LINE: 6px;
+  --CONTENT_MAX_WIDTH: 335px;
+  --PAGE_MAX_WIDTH: 435px;
+
+  --SIZE_10: 10px;
+  --SIZE_16: 16px;
+  --SIZE_20: 20px;
+  --SIZE_26: 26px;
+  --SIZE_30: 30px;
+  --SIZE_40: 40px;
+  --SIZE_50: 50px;
+  --SIZE_60: 60px;
+  --SIZE_68: 68px;
+  --SIZE_76: 76px;
+  --SIZE_84: 84px;
+  --SIZE_90: 90px;
+  --SIZE_96: 96px;
+  --SIZE_100: 100px;
+  --SIZE_112: 112px;
+  --SIZE_124: 124px;
+  --SIZE_158: 158px;
+  --SIZE_168: 168px;
+  --SIZE_190: 190px;
+  --SIZE_200: 200px;
+  --SIZE_230: 230px;
+  --SIZE_260: 260px;
+  --SIZE_290: 290px;
+  --SIZE_296: 296px;
+  --SIZE_400: 400px;
+
+  --RADIUS_5: 5px;
+  --RADIUS_6: 6px;
+  --RADIUS_10: 10px;
+  --RADIUS_12: 12px;
+  --RADIUS_16: 16px;
+  --RADIUS_28: 28px;
+  --RADIUS_40: 40px;
+
+  --MARGIN_4: 4px;
+  --MARGIN_6: 6px;
+  --MARGIN_8: 8px;
+  --MARGIN_10: 10px;
+  --MARGIN_12: 12px;
+  --MARGIN_14: 14px;
+  --MARGIN_16: 16px;
+  --MARGIN_20: 20px;
+  --MARGIN_30: 30px;
+  --MARGIN_40: 40px;
+  --MARGIN_50: 50px;
+  --MARGIN_60: 60px;
+  --MARGIN_76: 76px;
+  --MARGIN_116: 116px;
+
+  --PADDING_2: 2px;
+  --PADDING_4: 4px;
+  --PADDING_6: 6px;
+  --PADDING_8: 8px;
+  --PADDING_10: 10px;
+  --PADDING_12: 12px;
+  --PADDING_14: 14px;
+  --PADDING_16: 16px;
+  --PADDING_18: 18px;
+  --PADDING_20: 20px;
+  --PADDING_24: 24px;
+  --PADDING_26: 26px;
+  --PADDING_30: 30px;
+  --PADDING_40: 40px;
+  --PADDING_46: 46px;
+}

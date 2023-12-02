@@ -1,0 +1,37 @@
+.wrapper {
+  background-color: var(--COLOR_FOREGROUND);
+}
+
+.text {
+  max-width: var(--SIZE_296);
+  margin: 0 auto;
+  padding: var(--PADDING_20) 0;
+}
+
+.middle {
+  width: 100%;
+  margin-bottom: var(--MARGIN_20);
+}
+
+.inputWrapper {
+  padding-bottom: var(--PADDING_20);
+}
+
+.bottom {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notifications {
+  margin-top: var(--MARGIN_20);
+  position: relative;
+}
+
+.switch {
+  position: absolute;
+  top: 6px; /* pixel perfect */
+  right: 0; /* pixel perfect */
+}

@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--PADDING_46);
+  width: var(--PAGE_MAX_WIDTH);
+  min-height: var(--SIZE_400);
+  background: var(--COLOR_FOREGROUND);
+  border-radius: var(--RADIUS_16);
+}

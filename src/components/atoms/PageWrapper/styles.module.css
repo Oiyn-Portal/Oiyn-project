@@ -1,0 +1,40 @@
+.pageWrapper {
+  padding-top: var(--PADDING_10);
+  padding-right: var(--PADDING_30);
+  padding-left: var(--PADDING_30);
+  padding-bottom: var(--PADDING_40);
+  background-color: var(--COLOR_FOREGROUND);
+  box-shadow: 0 10px 30px var(--COLOR_SHADOW_GENERAL);
+  max-width: var(--PAGE_MAX_WIDTH);
+  position: relative;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.withFixedHeader {
+  padding-right: var(--PADDING_20);
+  padding-left: var(--PADDING_20);
+}
+
+.pageWrapperNew {
+  padding-top: var(--PADDING_10);
+  background-color: var(--COLOR_FOREGROUND);
+  box-shadow: 0 var(--SIZE_10) var(--SIZE_30) var(--COLOR_SHADOW_GENERAL);
+  max-width: var(--PAGE_MAX_WIDTH);
+  position: relative;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.withFixedHeaderNew {
+  padding-right: var(--PADDING_20);
+  padding-left: var(--PADDING_20);
+}
