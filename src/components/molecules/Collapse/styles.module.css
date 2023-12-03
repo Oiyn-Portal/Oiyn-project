@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  color: #151515;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 40px;
+}

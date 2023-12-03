@@ -3,7 +3,6 @@ import { persistReducer, persistStore } from 'redux-persist';
 import AsyncStorage from 'redux-persist/lib/storage';
 import createSagaMiddleware, { END, Saga, Task } from 'redux-saga';
 
-import { actions } from 'src/actions';
 import { APP_VERSION } from 'src/constants/env';
 import { ReduxState, initialState, rootReducer } from 'src/reducers';
 import { rootSaga } from 'src/sagas';
@@ -24,11 +23,7 @@ const sagaMiddleware = createSagaMiddleware();
 
 const THROTTLE_TIMEOUT = 3000;
 
-const THROTTLE_ACTIONS = [
-  actions.api.client.phoneVerifyStart.started,
-  actions.api.client.phoneVerifyEnd.started.type,
-  actions.api.appointments.addAppointment.started.type,
-];
+const THROTTLE_ACTIONS: any = [];
 
 const progress: Record<string, number> = {};
 

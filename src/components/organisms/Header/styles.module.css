@@ -1,0 +1,51 @@
+.header {
+  min-height: 103px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1668px;
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.title {
+  margin-left: 30px;
+  color: #161616;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.44px;
+}
+
+.langs {
+  width: 61px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang {
+  color: #161616;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  cursor: pointer;
+}

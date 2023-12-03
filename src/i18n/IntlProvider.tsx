@@ -16,7 +16,8 @@ export const IntlProvider: React.FC<Props> = ({ children }) => {
     <Provider
       defaultLocale={defaultLocale}
       key={locale}
-      locale={locale}
+      //TODO: The problem with the Kazakh locale
+      locale={'ru'}
       messages={locales[locale].dictionary}
       textComponent={React.Fragment}
     >

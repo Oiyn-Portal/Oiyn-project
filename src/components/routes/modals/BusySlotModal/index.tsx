@@ -27,12 +27,7 @@ export const BusySlotModal: React.FC<Props> = ({ orderUID }) => {
         <Msg id="base.buttons.Next" />
       </p>
 
-      <Button
-        type="button"
-        onClick={onClick}
-        variant="primary"
-        label={{ id: 'components.modals.BusySlotModal.button.text' }}
-      />
+      <button onClick={onClick}>close</button>
     </div>
   );
 };

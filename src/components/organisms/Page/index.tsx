@@ -31,10 +31,10 @@ export const Page: React.FC<Props> = ({ back, children, template, title }) => {
   useLayoutEffect(() => {
     document.title = userName
       ? msg(intl, {
-          id: 'components.organisms.Page.personalTitle',
+          id: 'events.error.phone.required',
           values: { userName },
         })
-      : msg(intl, msgProps || { id: 'components.organisms.Page.title' });
+      : msg(intl, msgProps || { id: 'base.buttons.Next' });
   }, [title, userName, msgProps, intl]);
 
   let renderedTitle = null;

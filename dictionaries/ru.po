@@ -12,6 +12,78 @@ msgctxt "base"
 msgid "base.buttons.Next"
 msgstr "Далее"
 
+msgctxt "base"
+msgid "categories.arcades"
+msgstr "Аркады"
+
+msgctxt "base"
+msgid "categories.casual"
+msgstr "Казуальные"
+
+msgctxt "base"
+msgid "categories.childish"
+msgstr "Детские"
+
+msgctxt "base"
+msgid "categories.desktop"
+msgstr "Настольные"
+
+msgctxt "base"
+msgid "categories.fighters"
+msgstr "Боевики"
+
+msgctxt "base"
+msgid "categories.forTwo"
+msgstr "Для двоих"
+
+msgctxt "base"
+msgid "categories.horror"
+msgstr "Хорроры"
+
+msgctxt "base"
+msgid "categories.popular"
+msgstr "Популярные"
+
+msgctxt "base"
+msgid "categories.puzzles"
+msgstr "Головоломки"
+
+msgctxt "base"
+msgid "categories.rolePlaying"
+msgstr "Ролевые"
+
+msgctxt "base"
+msgid "categories.simulators"
+msgstr "Симуляторы"
+
+msgctxt "base"
+msgid "categories.strategies"
+msgstr "Стратегии"
+
+msgctxt "base"
+msgid "categories.training"
+msgstr "Обучающие"
+
+msgctxt "base"
+msgid "components.molecules.Collapse.category"
+msgstr "Категории"
+
+msgctxt "base"
+msgid "components.molecules.Footer.agreement"
+msgstr "Пользовательское соглашение"
+
+msgctxt "base"
+msgid "components.molecules.Footer.confidentiality"
+msgstr "Политика конфиденциальности"
+
+msgctxt "base"
+msgid "components.organisms.Header.title"
+msgstr "OIYN - ИГРОВОЙ ПОРТАЛ"
+
+msgctxt "base"
+msgid "components.organisms.forms.SearchForm.placeholder"
+msgstr "Поисковик игр..."
+
 msgctxt "events"
 msgid "events.error.phone.required"
 msgstr "Пожалуйста, укажите свой номер тефона"

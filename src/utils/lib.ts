@@ -1,15 +1,13 @@
 import Compress from 'compress.js';
 
-import { API_HOST, PUBLIC_ENV } from 'src/constants/env';
+import { API_HOST } from 'src/constants/env';
 import { Locales } from 'src/i18n';
 import { Attachments, Time, UserSettings } from 'src/types';
 
 export const getAPIUrl = (protocol: 'https' | 'wss') => {
-  const API_PROTOCOL =
-    PUBLIC_ENV === 'local' ? protocol.slice(0, -1) : protocol;
   const ENDPOINT = protocol === 'wss' ? '/ws' : '';
 
-  return `${API_PROTOCOL}://${API_HOST}${ENDPOINT}`;
+  return `${protocol}://${API_HOST}${ENDPOINT}`;
 };
 
 export const getOnlinePageUrl = (orderUID: UserSettings['orderUID']) =>

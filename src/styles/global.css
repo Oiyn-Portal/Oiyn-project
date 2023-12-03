@@ -18,8 +18,8 @@ code {
     monospace;
 }
 
-.app {
-  background-color: var(--COLOR_APP_BACKGROUND);
+#root {
+  height: 100%;
 }
 
 .ant-spin-dot-item {

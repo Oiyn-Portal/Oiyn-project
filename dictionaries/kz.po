@@ -12,6 +12,78 @@ msgctxt "base"
 msgid "base.buttons.Next"
 msgstr "Siguiente"
 
+msgctxt "base"
+msgid "categories.arcades"
+msgstr "Аркадалар"
+
+msgctxt "base"
+msgid "categories.casual"
+msgstr "Кездейсоқ"
+
+msgctxt "base"
+msgid "categories.childish"
+msgstr "Балаларға арналған"
+
+msgctxt "base"
+msgid "categories.desktop"
+msgstr "Үстел үсті"
+
+msgctxt "base"
+msgid "categories.fighters"
+msgstr "Боевиктер"
+
+msgctxt "base"
+msgid "categories.forTwo"
+msgstr "Екі адамға арналған"
+
+msgctxt "base"
+msgid "categories.horror"
+msgstr "Хоррор"
+
+msgctxt "base"
+msgid "categories.popular"
+msgstr "Танымал"
+
+msgctxt "base"
+msgid "categories.puzzles"
+msgstr "Пазлдар"
+
+msgctxt "base"
+msgid "categories.rolePlaying"
+msgstr "Рөлдік ойындар"
+
+msgctxt "base"
+msgid "categories.simulators"
+msgstr "Симуляторлар"
+
+msgctxt "base"
+msgid "categories.strategies"
+msgstr "Стратегиялар"
+
+msgctxt "base"
+msgid "categories.training"
+msgstr "Тәрбиелік"
+
+msgctxt "base"
+msgid "components.molecules.Collapse.category"
+msgstr "Санаттар"
+
+msgctxt "base"
+msgid "components.molecules.Footer.agreement"
+msgstr "Қолданушы келісімі"
+
+msgctxt "base"
+msgid "components.molecules.Footer.confidentiality"
+msgstr "Құпиялылық саясаты"
+
+msgctxt "base"
+msgid "components.organisms.Header.title"
+msgstr "OIYN - ОЙЫН ПОРТАЛЫ"
+
+msgctxt "base"
+msgid "components.organisms.forms.SearchForm.placeholder"
+msgstr "Ойын іздеуші..."
+
 msgctxt "events"
 msgid "events.error.phone.required"
 msgstr "Por favor, introduzca su número de teléfono"

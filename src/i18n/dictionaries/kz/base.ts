@@ -3,4 +3,39 @@
 // file '/dictionaries/kz.po' and run '.po' extractor
 export const base = {
   'base.buttons.Next': 'Siguiente',
+
+  'components.organisms.forms.SearchForm.placeholder': 'Ойын іздеуші...',
+
+  'categories.arcades': 'Аркадалар',
+
+  'categories.casual': 'Кездейсоқ',
+
+  'categories.childish': 'Балаларға арналған',
+
+  'categories.desktop': 'Үстел үсті',
+
+  'categories.fighters': 'Боевиктер',
+
+  'categories.forTwo': 'Екі адамға арналған',
+
+  'categories.horror': 'Хоррор',
+
+  'categories.popular': 'Танымал',
+
+  'categories.puzzles': 'Пазлдар',
+
+  'categories.rolePlaying': 'Рөлдік ойындар',
+
+  'categories.simulators': 'Симуляторлар',
+
+  'categories.strategies': 'Стратегиялар',
+
+  'categories.training': 'Тәрбиелік',
+
+  'components.molecules.Collapse.category': 'Санаттар',
+
+  'components.molecules.Footer.agreement': 'Қолданушы келісімі',
+  'components.molecules.Footer.confidentiality': 'Құпиялылық саясаты',
+
+  'components.organisms.Header.title': 'OIYN - ОЙЫН ПОРТАЛЫ',
 };

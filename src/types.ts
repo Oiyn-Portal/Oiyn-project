@@ -306,6 +306,19 @@ export namespace Actions {
         };
       }
     }
+    export namespace games {
+      export namespace getGames {
+        export type started = {
+          maxRecords?: string;
+        };
+        export type done = {
+          extra: {
+            isRedirect: boolean;
+            orderUID: ID;
+          };
+        };
+      }
+    }
     export namespace appointments {
       export namespace addAppointment {
         export type started = {

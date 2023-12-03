@@ -7,10 +7,8 @@ import { Router } from 'src/navigation/Router';
 
 export const App: React.FC = () => (
   <Provider>
-    <div className="app" data-testid="page">
-      <Router />
-      <Loader />
-      <Modals />
-    </div>
+    <Router />
+    <Loader />
+    <Modals />
   </Provider>
 );

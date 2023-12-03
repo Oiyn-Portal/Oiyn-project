@@ -1,4 +1,4 @@
-import { Events } from 'src/i18n';
+import { DictionaryKey, Events } from 'src/i18n';
 
 export const allowedImagesFormat = [
   'image/png',
@@ -24,3 +24,58 @@ export const errorToMsg: Record<string, { title: Events; msg: Events }> = {
     msg: 'events.error.phone.required',
   },
 };
+
+export const CATEGORIES: { msg: DictionaryKey; value: string }[] = [
+  {
+    msg: 'categories.popular',
+    value: 'test',
+  },
+  {
+    msg: 'categories.arcades',
+    value: 'test',
+  },
+  {
+    msg: 'categories.desktop',
+    value: 'test',
+  },
+  {
+    msg: 'categories.puzzles',
+    value: 'test',
+  },
+  {
+    msg: 'categories.childish',
+    value: 'test',
+  },
+  {
+    msg: 'categories.casual',
+    value: 'test',
+  },
+  {
+    msg: 'categories.forTwo',
+    value: 'test',
+  },
+  {
+    msg: 'categories.desktop',
+    value: 'test',
+  },
+  {
+    msg: 'categories.training',
+    value: 'test',
+  },
+  {
+    msg: 'categories.horror',
+    value: 'test',
+  },
+  {
+    msg: 'categories.rolePlaying',
+    value: 'test',
+  },
+  {
+    msg: 'categories.simulators',
+    value: 'test',
+  },
+  {
+    msg: 'categories.strategies',
+    value: 'test',
+  },
+];

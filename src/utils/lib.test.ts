@@ -1,24 +1,11 @@
 import { describe, expect, test } from 'vitest';
 
-import { GOOGLE_CALENDAR_URL } from 'src/constants/env';
-import { toGoogleDate } from 'src/utils/dates';
 import {
   cleanPhoneNumber,
   createArray,
-  getGoogleCalendarUrl,
   normalizePhoneNumber,
   setAttachmentImageKey,
 } from 'src/utils/lib';
-
-const payload = {
-  location: 'Moscow',
-  action: 'TEMPLATE',
-  dates: `${toGoogleDate('2021-09-24T06:00:00.000Z')}/${toGoogleDate(
-    '2021-09-24T06:30:00.000Z'
-  )}`,
-  text: 'SAMMY - appointment',
-  details: 'You have scheduled a visit to the specialist Kirill',
-};
 
 const attachments = {
   comment: 'any comment',
@@ -100,25 +87,5 @@ describe('Normalizing phone number', () => {
 
   test('should correctly return the phone number', () => {
     expect(normalizePhoneNumber('79081407793')).toBe('+79081407793');
-  });
-});
-
-describe('Getting google calendar url with params', () => {
-  test('should generate url without params if payload is undefined', () => {
-    expect(getGoogleCalendarUrl(GOOGLE_CALENDAR_URL, undefined as never)).toBe(
-      'https://calendar.google.com/calendar/render'
-    );
-  });
-
-  test('should generate url without params if payload is an empty object', () => {
-    expect(getGoogleCalendarUrl(GOOGLE_CALENDAR_URL, undefined as never)).toBe(
-      'https://calendar.google.com/calendar/render'
-    );
-  });
-
-  test('should correctly generate url', () => {
-    expect(getGoogleCalendarUrl(GOOGLE_CALENDAR_URL, payload)).toBe(
-      'https://calendar.google.com/calendar/render?location=Moscow&action=TEMPLATE&dates=20210924T060000Z%2F20210924T063000Z&text=SAMMY+-+appointment&details=You+have+scheduled+a+visit+to+the+specialist+Kirill'
-    );
   });
 });

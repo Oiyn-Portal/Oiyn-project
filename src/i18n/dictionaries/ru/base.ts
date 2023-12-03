@@ -3,4 +3,39 @@
 // file '/dictionaries/ru.po' and run '.po' extractor
 export const base = {
   'base.buttons.Next': 'Далее',
+
+  'components.organisms.forms.SearchForm.placeholder': 'Поисковик игр...',
+
+  'categories.arcades': 'Аркады',
+
+  'categories.casual': 'Казуальные',
+
+  'categories.childish': 'Детские',
+
+  'categories.desktop': 'Настольные',
+
+  'categories.fighters': 'Боевики',
+
+  'categories.forTwo': 'Для двоих',
+
+  'categories.horror': 'Хорроры',
+
+  'categories.popular': 'Популярные',
+
+  'categories.puzzles': 'Головоломки',
+
+  'categories.rolePlaying': 'Ролевые',
+
+  'categories.simulators': 'Симуляторы',
+
+  'categories.strategies': 'Стратегии',
+
+  'categories.training': 'Обучающие',
+
+  'components.molecules.Collapse.category': 'Категории',
+
+  'components.molecules.Footer.agreement': 'Пользовательское соглашение',
+  'components.molecules.Footer.confidentiality': 'Политика конфиденциальности',
+
+  'components.organisms.Header.title': 'OIYN - ИГРОВОЙ ПОРТАЛ',
 };

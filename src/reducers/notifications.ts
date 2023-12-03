@@ -28,13 +28,6 @@ const reducer = reducerWithInitialState<State>(initialState)
       ...state,
       data: removeMessage(state.data, payload.id),
     })
-  )
-  .case(
-    actions.ui.messages.resetMessages,
-    (state): State => ({
-      ...state,
-      success: undefined,
-    })
   );
 
 export const notifications = { initialState, reducer };

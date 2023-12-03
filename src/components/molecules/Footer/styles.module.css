@@ -1,0 +1,39 @@
+.footer {
+  min-height: 190px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1453px;
+  padding: 0 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoWrapper {
+  width: 100%;
+  max-width: 588px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 134.5%;
+}
+
+.copy {
+  color: #fff;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 134.5%;
+}

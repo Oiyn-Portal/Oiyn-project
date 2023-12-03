@@ -4,6 +4,7 @@ import { call, put, takeEvery } from 'redux-saga/effects';
 import { Action } from 'typescript-fsa';
 
 import { actions } from 'src/actions';
+import { API_KEY } from 'src/constants/env';
 import { errorToMsg } from 'src/constants/ui';
 import { registerAsyncActions } from 'src/utils/factories';
 import { generateID, getAPIUrl, makeFormData } from 'src/utils/lib';
@@ -29,6 +30,9 @@ function* ajaxGenerator(action: Action<any>): Generator {
       {
         baseURL,
         url: generatePath(actionCreator.options.url, params?.extra),
+        headers: {
+          Authorization: `Bearer ${API_KEY}`,
+        },
       }
     );
 

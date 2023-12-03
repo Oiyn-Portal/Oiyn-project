@@ -1,31 +1,18 @@
-type PublicEnv = 'local' | 'develop' | 'staging' | 'production';
+type PublicEnv = 'local' | 'production';
 export const PUBLIC_ENV = import.meta.env.VITE_PUBLIC_ENV as PublicEnv;
 export const APP_VERSION = import.meta.env.VITE_VERSION || '';
+export const BASE_ID = import.meta.env.BASE_ID || 'appNB5Pmysi5CTGt5';
+export const API_KEY =
+  import.meta.env.API_KEY ||
+  'patL44gkBXrscykCE.53ff96d03702c76fd7790c61344fdfbf03a12233902b61bf17613d525ffe4f62';
 
 const configs: Record<PublicEnv, { API_HOST: string }> = {
   local: {
-    API_HOST: 'localhost:8000',
-  },
-  develop: {
-    API_HOST: 'dev.api.sammy.expert',
-  },
-  staging: {
-    API_HOST: 'staging.api.sammy.expert',
+    API_HOST: `api.airtable.com/v0/${BASE_ID}/games`,
   },
   production: {
-    API_HOST: 'api.sammy.expert',
+    API_HOST: `api.airtable.com/v0/${BASE_ID}/games`,
   },
 };
 
 export const { API_HOST } = configs[PUBLIC_ENV];
-
-export const GOOGLE_MAPS_URL = 'https://www.google.com/maps/search';
-export const INSTAGRAM_URL = 'https://www.instagram.com';
-export const FACEBOOK_URL = 'https://www.facebook.com';
-export const FACEBOOK_MSG_URL = 'https://m.me';
-export const WHATSAPP_WEB_URL = 'https://api.whatsapp.com/';
-export const WHATSAPP_MOB_URL = 'whatsapp://';
-export const GOOGLE_CALENDAR_URL =
-  'https://calendar.google.com/calendar/render';
-
-export const IP_API_URL = 'https://ipapi.co/json/';
