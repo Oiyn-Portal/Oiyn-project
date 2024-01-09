@@ -5,6 +5,9 @@ import { actions } from 'src/actions';
 import { Locales } from 'src/i18n';
 import { Msg } from 'src/i18n/Msg';
 
+import instagram from 'src/assets/images/instagram.jpg';
+import telegram from 'src/assets/images/telegram.jpg';
+
 import styles from 'src/components/organisms/Header/styles.module.css';
 
 export const Header: React.FC = () => {
@@ -18,11 +21,15 @@ export const Header: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.icons}>
           <div className={styles.icon}>
-            <img src="src/assets/images/instagram.jpg" alt="instagram" />
+            <a href="https://www.instagram.com/oiyn_dev_studio/">
+              <img src={instagram} alt="instagram" />
+            </a>
           </div>
 
           <div className={styles.icon}>
-            <img src="src/assets/images/telegram.jpg" alt="telegram" />
+            <a href="https://t.me/oiyn_dev_studio">
+              <img src={telegram} alt="telegram" />
+            </a>
           </div>
 
           <h1 className={styles.title}>

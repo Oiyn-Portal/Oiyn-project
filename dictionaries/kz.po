@@ -13,6 +13,10 @@ msgid "base.buttons.Next"
 msgstr "Siguiente"
 
 msgctxt "base"
+msgid "base.buttons.back"
+msgstr "Артқа"
+
+msgctxt "base"
 msgid "categories.arcades"
 msgstr "Аркадалар"
 
@@ -65,6 +69,18 @@ msgid "categories.training"
 msgstr "Тәрбиелік"
 
 msgctxt "base"
+msgid "components.molecules.Card.date"
+msgstr "Жарияланған күні:"
+
+msgctxt "base"
+msgid "components.molecules.Card.platform"
+msgstr "Платформа:"
+
+msgctxt "base"
+msgid "components.molecules.Card.views"
+msgstr "Көрсетілімдер:"
+
+msgctxt "base"
 msgid "components.molecules.Collapse.category"
 msgstr "Санаттар"
 
@@ -81,8 +97,44 @@ msgid "components.organisms.Header.title"
 msgstr "OIYN - ОЙЫН ПОРТАЛЫ"
 
 msgctxt "base"
+msgid "components.organisms.ListGames.noResults"
+msgstr "Нәтиже жоқ"
+
+msgctxt "base"
 msgid "components.organisms.forms.SearchForm.placeholder"
 msgstr "Ойын іздеуші..."
+
+msgctxt "base"
+msgid "components.routes.pages.Error404.title"
+msgstr "OIYN"
+
+msgctxt "base"
+msgid "components.routes.pages.Game.button"
+msgstr "Ойнау"
+
+msgctxt "base"
+msgid "components.routes.pages.Game.date"
+msgstr "Жарияланған күні:"
+
+msgctxt "base"
+msgid "components.routes.pages.Game.noResults"
+msgstr "Нәтиже жоқ"
+
+msgctxt "base"
+msgid "components.routes.pages.Game.platform"
+msgstr "Платформа:"
+
+msgctxt "base"
+msgid "components.routes.pages.Game.title"
+msgstr "OIYN"
+
+msgctxt "base"
+msgid "components.routes.pages.Game.views"
+msgstr "Көрсетілімдер:"
+
+msgctxt "base"
+msgid "components.routes.pages.Main.title"
+msgstr "OIYN"
 
 msgctxt "events"
 msgid "events.error.phone.required"

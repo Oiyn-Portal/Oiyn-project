@@ -13,6 +13,10 @@ msgid "base.buttons.Next"
 msgstr "Далее"
 
 msgctxt "base"
+msgid "base.buttons.back"
+msgstr "Назад"
+
+msgctxt "base"
 msgid "categories.arcades"
 msgstr "Аркады"
 
@@ -65,6 +69,18 @@ msgid "categories.training"
 msgstr "Обучающие"
 
 msgctxt "base"
+msgid "components.molecules.Card.date"
+msgstr "Дата публикации:"
+
+msgctxt "base"
+msgid "components.molecules.Card.platform"
+msgstr "Платформа:"
+
+msgctxt "base"
+msgid "components.molecules.Card.views"
+msgstr "Просмотров:"
+
+msgctxt "base"
 msgid "components.molecules.Collapse.category"
 msgstr "Категории"
 
@@ -81,8 +97,44 @@ msgid "components.organisms.Header.title"
 msgstr "OIYN - ИГРОВОЙ ПОРТАЛ"
 
 msgctxt "base"
+msgid "components.organisms.ListGames.noResults"
+msgstr "Нет результатов"
+
+msgctxt "base"
 msgid "components.organisms.forms.SearchForm.placeholder"
 msgstr "Поисковик игр..."
+
+msgctxt "base"
+msgid "components.routes.pages.Error404.title"
+msgstr "OIYN"
+
+msgctxt "base"
+msgid "components.routes.pages.Game.button"
+msgstr "Играть"
+
+msgctxt "base"
+msgid "components.routes.pages.Game.date"
+msgstr "Дата публикации:"
+
+msgctxt "base"
+msgid "components.routes.pages.Game.noResults"
+msgstr "Нет результатов"
+
+msgctxt "base"
+msgid "components.routes.pages.Game.platform"
+msgstr "Платформа:"
+
+msgctxt "base"
+msgid "components.routes.pages.Game.title"
+msgstr "OIYN"
+
+msgctxt "base"
+msgid "components.routes.pages.Game.views"
+msgstr "Просмотров:"
+
+msgctxt "base"
+msgid "components.routes.pages.Main.title"
+msgstr "OIYN"
 
 msgctxt "events"
 msgid "events.error.phone.required"

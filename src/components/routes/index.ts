@@ -20,17 +20,17 @@ export type PageRoute = {
 export const pages: Record<PAGES, PageRoute> = {
   [PAGES.MAIN]: {
     access: 'all',
-    title: 'base.buttons.Next',
+    title: 'components.routes.pages.Main.title',
     component: lazy(() => import('src/components/routes/pages/Main')),
   },
   [PAGES.GAME]: {
     access: 'all',
-    title: 'base.buttons.Next',
+    title: 'components.routes.pages.Game.title',
     component: lazy(() => import('src/components/routes/pages/Game')),
   },
   [PAGES.ERROR_404]: {
     access: 'all',
-    title: 'base.buttons.Next',
+    title: 'components.routes.pages.Error404.title',
     component: lazy(() => import('src/components/routes/pages/Error404')),
   },
 };

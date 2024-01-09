@@ -21,3 +21,17 @@ export const handleMessages = (obj: Notification, data: Notification[]) => {
 
 export const removeMessage = (data: Notification[], id: string) =>
   data.filter((el) => el.id !== id);
+
+export const getArrayWitchValue = (array: string[], value: string) => {
+  let mode = 'add';
+
+  const newArray = array.filter((el) => {
+    if (value === el) {
+      mode = 'delete';
+      return false;
+    }
+    return true;
+  });
+
+  return mode === 'add' ? [...array, value] : newArray;
+};

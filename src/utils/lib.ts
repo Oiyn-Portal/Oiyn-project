@@ -1,17 +1,16 @@
 import Compress from 'compress.js';
 
-import { API_HOST } from 'src/constants/env';
+import { API_HOST, PUBLIC_ENV } from 'src/constants/env';
 import { Locales } from 'src/i18n';
-import { Attachments, Time, UserSettings } from 'src/types';
+import { Attachments, Time } from 'src/types';
 
 export const getAPIUrl = (protocol: 'https' | 'wss') => {
+  const API_PROTOCOL =
+    PUBLIC_ENV === 'local' ? protocol.slice(0, -1) : protocol.slice(0, -1); //protocol;
   const ENDPOINT = protocol === 'wss' ? '/ws' : '';
 
-  return `${protocol}://${API_HOST}${ENDPOINT}`;
+  return `${API_PROTOCOL}://${API_HOST}${ENDPOINT}`;
 };
-
-export const getOnlinePageUrl = (orderUID: UserSettings['orderUID']) =>
-  `/${orderUID}`;
 
 export const getGoogleCalendarUrl = (
   base: string,
@@ -121,4 +120,19 @@ export const sortTimesSlots = (slots: Time[]) =>
 export const normalizeImageName = (url: string) => {
   const fileName = url?.split('/').pop()?.split('?')[0] || null;
   return fileName;
+};
+
+export const debounce = (func: (value: string) => void, deleay: number) => {
+  let timer: ReturnType<typeof setTimeout> | null = null;
+
+  return (value: string) => {
+    if (timer) {
+      clearTimeout(timer);
+    }
+
+    timer = setTimeout(() => {
+      func(value);
+      timer = null;
+    }, deleay);
+  };
 };

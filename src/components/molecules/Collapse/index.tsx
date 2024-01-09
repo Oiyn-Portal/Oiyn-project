@@ -4,6 +4,8 @@ import React from 'react';
 
 import { Msg } from 'src/i18n/Msg';
 
+import accordion from 'src/assets/images/accordion.png';
+
 import styles from 'src/components/molecules/Collapse/styles.module.css';
 
 type Props = {
@@ -12,7 +14,7 @@ type Props = {
 
 const Header = () => (
   <div className={styles.header}>
-    <img src="src/assets/images/accordion.png" alt="icon" />
+    <img src={accordion} alt="icon" />
 
     <span className={styles.text}>
       <Msg id="components.molecules.Collapse.category" />

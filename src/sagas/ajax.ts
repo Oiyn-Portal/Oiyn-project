@@ -30,6 +30,7 @@ function* ajaxGenerator(action: Action<any>): Generator {
       {
         baseURL,
         url: generatePath(actionCreator.options.url, params?.extra),
+        withCredentials: false,
         headers: {
           Authorization: `Bearer ${API_KEY}`,
         },

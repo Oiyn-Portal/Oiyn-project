@@ -1,6 +1,6 @@
 export const ENDPOINTS = {
-  BASE_URL: '',
   LIST_RECORDS: '/listRecords',
+  RECORD: '/listRecords',
 } as const;
 
 export type Endpoints = typeof ENDPOINTS;

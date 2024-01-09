@@ -1,0 +1,107 @@
+.card {
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid #bbb;
+  overflow: hidden;
+  position: relative;
+}
+
+.preview {
+  width: 100%;
+  height: 448px;
+  background-color: #f7f7f7;
+  margin-bottom: 109px;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  position: absolute;
+  top: 368px;
+  left: 6%;
+}
+
+.link {
+  color: #151515;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  position: absolute;
+  top: 97px;
+  left: 177px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 500px;
+  cursor: pointer;
+}
+
+.content {
+  padding: 0 6%;
+}
+
+.description {
+  color: #151515;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 30px;
+  white-space: pre-line;
+}
+
+.slider {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #bbb;
+  margin-bottom: 14px;
+}
+
+.slideWrapper {
+  width: 313px;
+  height: 176px;
+  border-radius: 15px;
+  background-color: #f7f7f7;
+}
+
+.infoWrapper {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.label {
+  color: #bbb;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 11px;
+}
+
+.dateWrapper {
+  display: flex;
+}
+
+.dateWrapper .textWrapper {
+  margin-left: 25px;
+}
+
+.dateWrapper .text,
+.dateWrapper .label {
+  text-align: end;
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+  color: #151515;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

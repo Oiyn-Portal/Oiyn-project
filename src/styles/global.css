@@ -1,7 +1,13 @@
 @font-face {
-  font-family: 'SanFrancisco';
-  src: local('SanFrancisco'),
-    url(src/assets/fonts/SFUIDisplay-Regular.ttf) format('truetype');
+  font-family: 'Raleway';
+  src: local('Raleway'),
+    url(src/assets/fonts/Raleway-Regular.ttf) format('truetype');
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  html {
+    zoom: 70%;
+  }
 }
 
 body {

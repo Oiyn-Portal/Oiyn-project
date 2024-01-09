@@ -19,7 +19,11 @@ export const Dimmer: React.FC<Props> = ({
   zIndex = 100,
 }) => {
   useEffect(() => {
-    document.body.style.overflow = inProgress ? 'unset' : 'hidden';
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
   }, [inProgress]);
 
   return (

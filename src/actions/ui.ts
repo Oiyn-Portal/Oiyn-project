@@ -36,3 +36,12 @@ export const modal = {
   show: actionCreator<Actions.ui.modal.show<Modals>>('UI_MODAl_SHOW'),
   hide: actionCreator<Actions.ui.modal.hide>('UI_MODAl_HIDE'),
 };
+
+export const games = {
+  setCategories: actionCreator<Actions.ui.games.setCategories>(
+    'UI_GAMES_SET_CATEGORIES'
+  ),
+  setSearchWord: actionCreator<Actions.ui.games.setSearchWord>(
+    'UI_GAMES_SET_SEARCH_WORD'
+  ),
+};

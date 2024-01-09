@@ -24,14 +24,16 @@ const Main: React.FC = () => (
           </div>
         </nav>
 
-        <main>
+        <main className={styles.main}>
           <div className={styles.threeBanner}>
             <Banner />
           </div>
 
           <SearchForm />
 
-          <ListGames />
+          <div className={styles.listWrapper}>
+            <ListGames />
+          </div>
         </main>
       </div>
     </div>

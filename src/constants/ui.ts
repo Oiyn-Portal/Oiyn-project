@@ -28,54 +28,50 @@ export const errorToMsg: Record<string, { title: Events; msg: Events }> = {
 export const CATEGORIES: { msg: DictionaryKey; value: string }[] = [
   {
     msg: 'categories.popular',
-    value: 'test',
+    value: 'popular',
   },
   {
     msg: 'categories.arcades',
-    value: 'test',
+    value: 'arcades',
   },
   {
     msg: 'categories.desktop',
-    value: 'test',
+    value: 'desktop',
   },
   {
     msg: 'categories.puzzles',
-    value: 'test',
+    value: 'puzzles',
   },
   {
     msg: 'categories.childish',
-    value: 'test',
+    value: 'childish',
   },
   {
     msg: 'categories.casual',
-    value: 'test',
+    value: 'casual',
   },
   {
     msg: 'categories.forTwo',
-    value: 'test',
-  },
-  {
-    msg: 'categories.desktop',
-    value: 'test',
+    value: 'forTwo',
   },
   {
     msg: 'categories.training',
-    value: 'test',
+    value: 'training',
   },
   {
     msg: 'categories.horror',
-    value: 'test',
+    value: 'horror',
   },
   {
     msg: 'categories.rolePlaying',
-    value: 'test',
+    value: 'rolePlaying',
   },
   {
     msg: 'categories.simulators',
-    value: 'test',
+    value: 'simulators',
   },
   {
     msg: 'categories.strategies',
-    value: 'test',
+    value: 'strategies',
   },
 ];

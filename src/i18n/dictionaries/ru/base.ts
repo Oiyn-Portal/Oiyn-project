@@ -4,7 +4,7 @@
 export const base = {
   'base.buttons.Next': 'Далее',
 
-  'components.organisms.forms.SearchForm.placeholder': 'Поисковик игр...',
+  'base.buttons.back': 'Назад',
 
   'categories.arcades': 'Аркады',
 
@@ -32,10 +32,27 @@ export const base = {
 
   'categories.training': 'Обучающие',
 
+  'components.molecules.Card.date': 'Дата публикации:',
+  'components.molecules.Card.platform': 'Платформа:',
+  'components.molecules.Card.views': 'Просмотров:',
+
   'components.molecules.Collapse.category': 'Категории',
 
   'components.molecules.Footer.agreement': 'Пользовательское соглашение',
   'components.molecules.Footer.confidentiality': 'Политика конфиденциальности',
 
   'components.organisms.Header.title': 'OIYN - ИГРОВОЙ ПОРТАЛ',
+
+  'components.organisms.ListGames.noResults': 'Нет результатов',
+
+  'components.organisms.forms.SearchForm.placeholder': 'Поисковик игр...',
+
+  'components.routes.pages.Error404.title': 'OIYN',
+  'components.routes.pages.Game.button': 'Играть',
+  'components.routes.pages.Game.date': 'Дата публикации:',
+  'components.routes.pages.Game.noResults': 'Нет результатов',
+  'components.routes.pages.Game.platform': 'Платформа:',
+  'components.routes.pages.Game.title': 'OIYN',
+  'components.routes.pages.Game.views': 'Просмотров:',
+  'components.routes.pages.Main.title': 'OIYN',
 };

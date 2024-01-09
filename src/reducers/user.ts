@@ -2,10 +2,12 @@ import { reducerWithInitialState } from 'typescript-fsa-reducers';
 
 import { actions } from 'src/actions';
 import { defaultLocale } from 'src/i18n';
-import { GeoInfo, User } from 'src/types';
+import { GeoInfo } from 'src/types';
 
 export type State = {
-  data?: User;
+  data?: {
+    name: string;
+  };
   geoInfo: GeoInfo;
 };
 

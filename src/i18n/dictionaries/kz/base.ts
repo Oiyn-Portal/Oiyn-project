@@ -4,7 +4,7 @@
 export const base = {
   'base.buttons.Next': 'Siguiente',
 
-  'components.organisms.forms.SearchForm.placeholder': 'Ойын іздеуші...',
+  'base.buttons.back': 'Артқа',
 
   'categories.arcades': 'Аркадалар',
 
@@ -32,10 +32,27 @@ export const base = {
 
   'categories.training': 'Тәрбиелік',
 
+  'components.molecules.Card.date': 'Жарияланған күні:',
+  'components.molecules.Card.platform': 'Платформа:',
+  'components.molecules.Card.views': 'Көрсетілімдер:',
+
   'components.molecules.Collapse.category': 'Санаттар',
 
   'components.molecules.Footer.agreement': 'Қолданушы келісімі',
   'components.molecules.Footer.confidentiality': 'Құпиялылық саясаты',
 
   'components.organisms.Header.title': 'OIYN - ОЙЫН ПОРТАЛЫ',
+
+  'components.organisms.ListGames.noResults': 'Нәтиже жоқ',
+
+  'components.organisms.forms.SearchForm.placeholder': 'Ойын іздеуші...',
+
+  'components.routes.pages.Error404.title': 'OIYN',
+  'components.routes.pages.Game.button': 'Ойнау',
+  'components.routes.pages.Game.date': 'Жарияланған күні:',
+  'components.routes.pages.Game.noResults': 'Нәтиже жоқ',
+  'components.routes.pages.Game.platform': 'Платформа:',
+  'components.routes.pages.Game.title': 'OIYN',
+  'components.routes.pages.Game.views': 'Көрсетілімдер:',
+  'components.routes.pages.Main.title': 'OIYN',
 };
