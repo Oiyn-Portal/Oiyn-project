@@ -91,6 +91,7 @@ export type Game = {
     title: string;
     views: number;
     url: string;
+    view: 'mobile' | 'desc';
   };
 };
 

@@ -54,20 +54,13 @@ export const Card: React.FC<Props> = ({ game, locale = 'kz' }) => {
             visibleSlides={3}
             totalSlides={game.fields.images.length}
             infinite
-            naturalSlideWidth={313}
-            naturalSlideHeight={176}
+            naturalSlideWidth={game.fields.images[0].width}
+            naturalSlideHeight={game.fields.images[0].height}
           >
             <Slider>
               {game.fields.images.map((el, index) => (
                 <Slide index={index} key={el.id}>
-                  <div
-                    className={styles.slideWrapper}
-                    style={{
-                      backgroundImage: `url(${el.url})`,
-                      backgroundRepeat: 'no-repeat',
-                      backgroundPosition: 'center center',
-                    }}
-                  />
+                  <img src={el.url} alt="" />
                 </Slide>
               ))}
             </Slider>

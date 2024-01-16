@@ -3,13 +3,15 @@ import { Spin } from 'antd';
 import { CarouselProvider, Slide, Slider } from 'pure-react-carousel';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import { actions } from 'src/actions';
 import { Button } from 'src/components/atoms/Button';
 import { Arrow } from 'src/components/atoms/icons/Arrow';
 import { Page } from 'src/components/organisms/Page';
+import { PAGES } from 'src/constants/pages';
 import { Msg } from 'src/i18n/Msg';
+import { Link } from 'src/navigation/Link';
 import { ReduxState } from 'src/reducers';
 import { getFormattedDate } from 'src/utils/dates';
 
@@ -17,7 +19,6 @@ import styles from 'src/components/routes/pages/Game/styles.module.css';
 
 const Game: React.FC = () => {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
   const { id = '' } = useParams();
 
   const { isLoader, game, locale } = useSelector(
@@ -62,23 +63,25 @@ const Game: React.FC = () => {
     );
   }
 
-  const onBack = () => {
-    navigate(-1);
-  };
-
   const preview = game.fields.preview[0].url;
   const logo = game.fields.logo[0].url;
 
   return (
     <Page template="main">
       <div className={styles.card}>
-        <button onClick={onBack} className={styles.back}>
+        <Link
+          url={{
+            scheme: PAGES.MAIN,
+          }}
+          className={styles.back}
+        >
           <Arrow />
 
           <span>
             <Msg id="base.buttons.back" />
           </span>
-        </button>
+        </Link>
+
         <div
           className={styles.preview}
           style={{
@@ -113,7 +116,7 @@ const Game: React.FC = () => {
                   actions.ui.modal.show({
                     name: 'GameModal',
                     data: {
-                      mode: 'desc',
+                      mode: game.fields.view,
                       pathToGame: game.fields.pathToGame || '',
                     },
                   })
@@ -128,20 +131,13 @@ const Game: React.FC = () => {
               visibleSlides={3}
               totalSlides={game.fields.images.length}
               infinite
-              naturalSlideWidth={313}
-              naturalSlideHeight={176}
+              naturalSlideWidth={game.fields.images[0].width}
+              naturalSlideHeight={game.fields.images[0].height}
             >
               <Slider>
                 {game.fields.images.map((el, index) => (
                   <Slide index={index} key={el.id}>
-                    <div
-                      className={styles.slideWrapper}
-                      style={{
-                        backgroundImage: `url(${el.url})`,
-                        backgroundRepeat: 'no-repeat',
-                        backgroundPosition: 'center center',
-                      }}
-                    />
+                    <img src={el.url} alt="" />
                   </Slide>
                 ))}
               </Slider>

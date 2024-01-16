@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from 'src/components/routes/modals/GameModal/styles.module.css';
+
 const screens = {
   mobile: {
     width: 375,
@@ -19,5 +21,13 @@ export type Props = {
 export const GameModal: React.FC<Props> = ({ pathToGame, mode }) => {
   const { width, height } = screens[mode];
 
-  return <iframe width={width} height={height} src={pathToGame} title="Game" />;
+  return (
+    <iframe
+      width={width}
+      height={height}
+      className={styles.iframe}
+      src={pathToGame}
+      title="Game"
+    />
+  );
 };
