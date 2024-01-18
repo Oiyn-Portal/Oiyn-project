@@ -10,6 +10,7 @@ import styles from 'src/components/routes/pages/Main/styles.module.css';
 
 const Main: React.FC = () => (
   <Page template="main">
+    fssdfsfd
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <nav>
