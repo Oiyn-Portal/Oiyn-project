@@ -1,7 +1,6 @@
 import { Update } from 'history';
 import React, { useLayoutEffect, useReducer } from 'react';
 import { Router as BrowserRouter } from 'react-router-dom';
-
 import { Preloader } from 'src/components/atoms/Preloader';
 import { PagesSwitch } from 'src/navigation/Switch';
 import { history } from 'src/navigation/store';
@@ -13,7 +12,6 @@ export const Router: React.FC = () => {
     action: history.action,
     location: history.location,
   });
-
   useLayoutEffect(() => {
     const unlisten = history.listen(dispatch);
 
